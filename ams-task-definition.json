@@ -70,7 +70,7 @@
   "requiresAttributes": [
     {
       "targetId": null,
-      "targetType": null,
+      "targetType": ip,
       "value": null,
       "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
     },
