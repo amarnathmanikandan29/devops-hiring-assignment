@@ -138,7 +138,19 @@
   "runtimePlatform": {
     "operatingSystemFamily": "LINUX",
     "cpuArchitecture": "X86_64"
+    "networkConfiguration": {
+      "awsvpcConfiguration": {
+        "assignPublicIp": "ENABLED",
+        "securityGroups": [
+          "sg-0a6e7d4a5238fe3c6"
+        ],
+        "subnets": [
+          "subnet-05a6557c"
+        ]
+      }
+    }
   },
+   
   "cpu": "256",
   "revision": 1,
   "status": "ACTIVE",
