@@ -36,7 +36,7 @@ env:
   ECR_REPOSITORY: ams-repository           # set this to your Amazon ECR repository name
   ECS_SERVICE: ams-deployment-service                 # set this to your Amazon ECS service name
   ECS_CLUSTER: ams-deployment-cluster                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: aws-cloudformation/ams-task-definition.json   # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: .aws-cloudformation/ams-task-definition.json   # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: ams-deployment-container           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
@@ -63,7 +63,7 @@ jobs:
       uses: aws-actions/aws-cloudformation-github-deploy@v1
       with:
          name: ams-cloudformation-stack
-         template: aws-cloudformation/cloudformation-stack.yaml
+         template: .aws-cloudformation/cloudformation-stack.yaml
          no-fail-on-empty-changeset: '1'
          capabilities: 'CAPABILITY_NAMED_IAM'
 
