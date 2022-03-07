@@ -138,6 +138,18 @@
     "operatingSystemFamily": "LINUX",
     "cpuArchitecture": "X86_64"
   },
+   "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "assignPublicIp": "ENABLED",
+      "securityGroups": [
+        "sg-009eba30420cae08a"
+      ],
+      "subnets": [
+        "subnet-0ae624eb66fda924a",
+        "subnet-05396b429250752d0"
+      ]
+    }
+  },
   "cpu": "256",
   "revision": 1,
   "status": "ACTIVE",
