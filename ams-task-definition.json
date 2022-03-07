@@ -137,17 +137,18 @@
   "networkMode": "awsvpc",
   "runtimePlatform": {
     "operatingSystemFamily": "LINUX",
-    "cpuArchitecture": "X86_64"
+    "cpuArchitecture": "X86_64",
     "networkConfiguration": {
-      "awsvpcConfiguration": {
-        "assignPublicIp": "ENABLED",
-        "securityGroups": [
-          "sg-0a6e7d4a5238fe3c6"
-        ],
-        "subnets": [
-          "subnet-05a6557c"
-        ]
-      }
+        "awsvpcConfiguration": {
+          "assignPublicIp": "ENABLED",
+          "securityGroups": [
+            "sg-009eba30420cae08a"
+          ],
+          "subnets": [
+            "subnet-0ae624eb66fda924a",
+            "subnet-05396b429250752d0"
+          ]
+        }
     }
   },
    
