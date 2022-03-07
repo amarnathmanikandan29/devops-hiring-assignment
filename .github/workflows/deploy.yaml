@@ -63,7 +63,7 @@ jobs:
       uses: aws-actions/aws-cloudformation-github-deploy@v1
       with:
          name: ams-cloudformation-stack
-         template: ../aws-cloudformation/cf-deploy-ecs-stack.yaml
+         template: ./cf-deploy-stack.yaml         
          no-fail-on-empty-changeset: '1'
          capabilities: 'CAPABILITY_NAMED_IAM'
 
